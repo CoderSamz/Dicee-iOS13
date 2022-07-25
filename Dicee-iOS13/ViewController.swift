@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // IBOutlet allows me to reference a UI elemennt
+    @IBOutlet weak var diceImageViewOne: UIImageView!
+    @IBOutlet weak var diceImageViewTwo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // change image
+        diceImageViewOne.image = #imageLiteral(resourceName: "DiceSix")
+        diceImageViewTwo.image = #imageLiteral(resourceName: "DiceTwo")
     }
 
 
